@@ -1,0 +1,151 @@
+<h1 class="fw-bold">Filtres</h1>
+<div class="container">
+    <div class="row">
+        <h5 class="pt-3">Prix</h5>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="200" value="50" class="slider" id="myRange" />
+            <br />
+            <label for="">0 €</label>
+            <label for="" class="px-5 mx-5">100 €</label>
+        </div>
+    </div>
+
+    <!-- <div class="categorie">
+        <div class="dropdown">
+            <div class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Catégorie
+            </div>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div> -->
+
+    <div class="row">
+        <p>
+            <button class="btn btn-primary dropdown-toggle w-100 bg-transparent" data-bs-toggle="collapse" href="#categories" role="button" aria-expanded="false" aria-controls="categories">
+                Catégories
+            </button>
+        </p>
+        <div class="collapse multi-collapse " id="categories">
+            <div class="card card-body bg-transparent text-white">
+                <div class="form-check form-switch ">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="bestsellers" checked>
+                    <label class="form-check-label" for="bestsellers">BestSellers </label>
+                    <span class="float-end">(100)</span>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="goodies">
+                    <label class="form-check-label" for="goodies">Goodies</label>
+                    <span class="float-end">(95)</span>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="vetements">
+                    <label class="form-check-label" for="vetements">vêtements</label>
+                    <span class="float-end">(120)</span>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="posters">
+                    <label class="form-check-label" for="posters">Affiches / Posters</label>
+                    <span class="float-end">(45)</span>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="comic">
+                    <label class="form-check-label" for="comic">Comics</label>
+                    <span class="float-end">(70)</span>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="multimedia">
+                    <label class="form-check-label" for="multimedia">Multimédias</label>
+                    <span class="float-end">(80)</span>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="equipement">
+                    <label class="form-check-label" for="equipement">Equipements</label>
+                    <span class="float-end">(48)</span>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="bijoux">
+                    <label class="form-check-label" for="bijoux">Bijoux</label>
+                    <span class="float-end">(12)</span>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-danger" type="checkbox" role="switch" id="vehicules">
+                    <label class="form-check-label" for="vehicules">Véhicules</label>
+                    <span class="float-end">(53)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p>
+            <button class="btn btn-primary dropdown-toggle w-100 bg-transparent" data-bs-toggle="collapse" href="#color" role="button" aria-expanded="false" aria-controls="color">
+                Couleurs
+            </button>
+        </p>
+        <div class="collapse multi-collapse " id="color">
+            <div class="card card-body bg-transparent text-white">
+                <div class="form-check ">
+                    <input class="form-check-input bg-danger" type="checkbox" id="noir" checked>
+                    <label class="form-check-label" for="noir">Noir </label>
+                    <span class="float-end">(100)</span>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input bg-danger" type="checkbox" id="bleu">
+                    <label class="form-check-label" for="bleu">Bleu</label>
+                    <span class="float-end">(95)</span>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input bg-danger" type="checkbox" id="rouge">
+                    <label class="form-check-label" for="rouge">Rouge</label>
+                    <span class="float-end">(21)</span>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input bg-danger" type="checkbox" id="blanc">
+                    <label class="form-check-label" for="blanc">Blanc</label>
+                    <span class="float-end">(45)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p>
+            <button class="btn btn-primary dropdown-toggle w-100 bg-transparent" data-bs-toggle="collapse" href="#univers" role="button" aria-expanded="false" aria-controls="univers">
+                Univers
+            </button>
+        </p>
+        <div class="collapse multi-collapse " id="univers">
+            <div class="card card-body bg-transparent text-white">
+                <div class="form-check">
+                    <input class="form-check-input bg-danger" type="checkbox" id="batman" checked>
+                    <label class="form-check-label" for="batman">The Batman </label>
+                    <span class="float-end">(123)</span>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input bg-danger" type="checkbox" id="dark-night">
+                    <label class="form-check-label" for="dark-night">The Dark Night Rises</label>
+                    <span class="float-end">(95)</span>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input bg-danger" type="checkbox" id="bat-vs-super">
+                    <label class="form-check-label" for="bat-vs-super">Batman VS Superman</label>
+                    <span class="float-end">(20)</span>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input bg-danger" type="checkbox" id="Bat-and-robin">
+                    <label class="form-check-label" for="Bat-and-robin">Batman VS Robin</label>
+                    <span class="float-end">(45)</span>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input bg-danger" type="checkbox" id="others">
+                    <label class="form-check-label" for="others">Autres (comics, dessin animés) </label>
+                    <span class="float-end">(70)</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

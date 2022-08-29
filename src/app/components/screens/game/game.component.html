@@ -1,0 +1,77 @@
+<!-- CORPS DE LA PAGE -->
+<div class="body">
+    <main class="container contour main">
+
+        <!-- la section princiaple qui contient le corps de la page -->
+        <section class="intro-main">
+            <!-- section pour d'introduction  -->
+            <div class="intro">
+                <div class="content">
+                    <h1> Let's play a <br> little game... </h1>
+                </div>
+                <div class="icon-down">
+                    <img src="../../../assets/images/Logos/flèche_down_header.png" alt="plus">
+                </div>
+            </div>
+            <!-- FIN section intro -->
+        </section>
+        <!-- FIN section home -->
+
+        <!-- section QUIZ -->
+        <section class="section-quiz" id="section-quiz">
+
+            <!-- Section demarrer le quiz -->
+            <div class="intro-quiz quiz" id="intro-quiz">
+                <h1>connaissez vous bien le chevalier noir ?</h1>
+                <img src="../../../assets/images/game/Batgame_2.png" alt="Start"> <br>
+                <button type="submit" class="btn-quiz" id="btn-start">démarrer le quiz</button>
+            </div>
+            <!-- Fin  -->
+
+            <!-- Debut chez des quiz -->
+            <div class="quiz-box quiz" id="quiz-box">
+                <h1> <span id="number-quiz">1</span>/<span id="total-quiz">10</span></h1>
+                <form action="" method="post" id="formulaire">
+                    <div class="question-box" id="question-box">
+                        <img src="../../../assets/images/game/Batgame_3.png" alt="illustration" id="img-illustrate">
+
+                        <!-- ICI le formulaire par defaut sans connexion API -->
+                        <div class="quiz-question" id="quiz-question">
+                            <p class="question" id="question">Echec connexion API ...</p>
+                            <span id="error-message"></span>
+                            <label for="checkbox1" class="response">
+                            <input type="checkbox" name="choix" id="checkbox1" value="">
+                            <p id="response" > 1 </p>
+                        </label>
+                            <label for="checkbox1" class="response">
+                            <input type="checkbox" name="choix" id="checkbox2" value="">
+                            <p id="response2" > 1 </p>
+                        </label>
+                            <label for="checkbox1" class="response">
+                            <input type="checkbox" name="choix" id="checkbox3" value="">
+                            <p id="response3" > 1 </p>
+                        </label>
+                        </div>
+                        <!-- Fin formulaire par defaut -->
+
+                    </div>
+                    <div class="btn-box" id="btn-box">
+                        <input type="submit" class="btn-quiz" value="question suivante" id="btn-next">
+                    </div>
+                </form>
+            </div>
+            <div class="popup-result quiz" id="popup-result">
+                <div class="box-resultat">
+                    <h1 id="titre"> Titre</h1>
+                    <p id="msg-result">Message reçu !</p>
+                    <a routerLink="game" class="btn-quiz">Recommencer le Quiz</a>
+                </div>
+            </div>
+
+            <!-- Fin des quiz -->
+        </section>
+        <!-- Fin section QUIZ -->
+
+    </main>
+</div>
+<!-- FIN CORPS DE LA PAGE -->

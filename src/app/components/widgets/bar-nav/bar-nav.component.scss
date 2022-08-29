@@ -1,0 +1,49 @@
+/* STYLE DE HEADER ###############*/
+
+@use '../../../../assets/styles/partials/colors' as colors;
+@import '../../../../assets/styles/partials/general';
+nav {
+    background-color: black !important;
+}
+
+.navbar-brand {
+    margin: 20px;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Rajdhani-Medium';
+    font-size: 26px;
+    font-style: normal;
+    &:hover {
+        text-decoration: underline;
+        font-style: bold;
+    }
+}
+
+.active-page {
+    color: white;
+    text-decoration: underline;
+    font-style: bold;
+}
+
+.logo-div {
+    .logo-content {
+        position: fixed;
+        top: 45vh;
+        right: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            padding: 10px;
+        }
+    }
+}

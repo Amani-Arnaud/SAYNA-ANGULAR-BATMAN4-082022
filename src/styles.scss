@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* IMPORTATION DES MODULES*/
+
+@use 'assets/styles/partials/colors' as colors;
+@import 'assets/styles/partials/general';
+@import 'assets/styles/partials/mixins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black !important;
+}

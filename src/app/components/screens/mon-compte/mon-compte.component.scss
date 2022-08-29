@@ -1,0 +1,21 @@
+/* IMPORTATION DES MODULES*/
+
+@use '../../../../assets/styles/partials/colors' as colors;
+@import '../../../../assets/styles/partials/general';
+@import '../../../../assets/styles/partials/mixins';
+main {
+    @include page_bg($bg-account);
+}
+
+.intro {
+    height: 700px;
+    .content {
+        margin-top: 200px;
+        h1 {
+            margin-left: 5%;
+            text-align: justify;
+            text-transform: uppercase;
+            font-size: 3em;
+        }
+    }
+}

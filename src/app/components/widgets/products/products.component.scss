@@ -1,0 +1,16 @@
+.card {
+    background-color: black !important;
+    cursor: pointer;
+    .card-body {
+        color: white !important;
+    }
+    .description {
+        border: 2px solid white !important;
+        border-top: 0px !important;
+    }
+    .old-price {
+        text-decoration: line-through !important;
+        font-size: 0.7em;
+        color: gray;
+    }
+}
