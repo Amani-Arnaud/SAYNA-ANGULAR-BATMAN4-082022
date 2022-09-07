@@ -1,5 +1,5 @@
 <div class="resulats mt-5 mb-5 d-flex justify-content-between">
-    <p>Résultats: <span class="mx-2">{{products.length}}</span> </p>
+    <p>Résultats: <span class="mx-2">{{products?.length}}</span> </p>
     <select class="form-select bg-transparent text-white w-25 mx-2" aria-label="Default select example">
         <option selected>Trier par</option>
         <option value="1">Couleur</option>
@@ -9,15 +9,15 @@
 </div>
 <div class="products row">
     <!-- <ng-container *ngFor="let item of products"> -->
-    <div class="card col-md-3" style="width: 18rem;" *ngFor="let item of products | paginate: { itemsPerPage: 6, currentPage: page }" [routerLink]="['/product', item.idarticles]">
-        <img class="card-img-top" [src]="item.image" alt="Card image cap">
+    <div class="card col-md-3 mx-auto" style="width: 18rem;" *ngFor="let item of products | paginate: { itemsPerPage: 6, currentPage: page }">
+        <img class="card-img-top" [src]="item.image" alt="Card image cap" routerLink="product/{{item.id}}">
         <div class="card-body description">
             <h5 class="card-title text-center"> {{item.Nom_A | uppercase}}</h5>
             <!-- <h5 class="card-text text-center"> {{item.Univers}}</h5> -->
             <p class="card-text text-center"> <span class="old-price">  </span> {{item.Prix | currency: 'EUR'}} </p>
         </div>
         <div class="card-body">
-            <button class="bn btn text-center w-100 ms-auto"> Ajouter au panier</button>
+            <button class="bn btn text-center w-100 ms-auto" (click)="addToCart(item)"> Ajouter au panier</button>
         </div>
     </div>
     <pagination-controls (pageChange)="page = $event" previousLabel="Precedent." nextLabel="Suivant" class="text-white text-center"></pagination-controls>

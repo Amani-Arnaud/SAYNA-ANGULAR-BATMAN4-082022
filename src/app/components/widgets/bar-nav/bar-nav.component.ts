@@ -13,10 +13,6 @@ export class BarNavComponent implements OnInit {
   myAccount = "MON COMPTE";
   constructor() { }
 
-  sayMessage() {
-    alert(this.home);
-  }
-
   ngOnInit(): void {
   }
 

@@ -12,15 +12,20 @@
 </section>
 <section>
     <div class="container contour">
-        <!-- <div class="row mt-5">
-            <app-cart class="float-end"></app-cart>
+        <div class="row mt-5">
+            <div class="container">
+                <div class="float-end pt-3">
+                    <button class="bg-transparent" [routerLink]="['/cart']">
+                        <i class="fa-solid fa-2x fa-cart-shopping text-white"></i>
+                    </button>
+                </div>
+            </div>
             <div class="col-md-3">
                 <app-aside></app-aside>
             </div>
             <div class="col-md-9">
                 <app-products></app-products>
             </div>
-        </div> -->
-        <app-product-detail></app-product-detail>
+        </div>
     </div>
 </section>

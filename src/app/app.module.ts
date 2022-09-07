@@ -13,12 +13,14 @@ import { GameComponent } from './components/screens/game/game.component';
 import { EshopComponent } from './components/screens/eshop/eshop.component';
 import { MonCompteComponent } from './components/screens/mon-compte/mon-compte.component';
 import { NotFoundPageComponent } from './components/screens/not-found-page/not-found-page.component';
-import { CartComponent } from './components/widgets/cart/cart.component';
+import { CartComponent } from './components/screens/cart/cart.component';
 import { ProductsComponent } from './components/widgets/products/products.component';
 import { AsideComponent } from './components/widgets/aside/aside.component';
 import { registerLocaleData } from '@angular/common';
 import { LoginComponent } from './components/screens/login/login.component';
-import { ProductDetailComponent } from './components/widgets/product-detail/product-detail.component';
+import { ProductDetailComponent } from './components/screens/product-detail/product-detail.component';
+import { ButtonComponent } from './components/widgets/button/button.component';
+import { SignupComponent } from './components/screens/signup/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,9 @@ import { ProductDetailComponent } from './components/widgets/product-detail/prod
     ProductsComponent,
     AsideComponent,
     LoginComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ButtonComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

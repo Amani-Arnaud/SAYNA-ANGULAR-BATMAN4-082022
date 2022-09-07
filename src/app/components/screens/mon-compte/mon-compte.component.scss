@@ -19,3 +19,10 @@ main {
         }
     }
 }
+
+.btn {
+    background-image: linear-gradient(to right, #19587d, #042138) !important;
+    &:hover {
+        background-image: linear-gradient(to right, #042138, #19587d) !important;
+    }
+}
