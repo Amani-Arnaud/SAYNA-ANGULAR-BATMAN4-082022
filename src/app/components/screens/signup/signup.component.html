@@ -7,16 +7,16 @@
                     <p class="description text-center">Vous avez déjà un compte ? <a [routerLink]="['/login']" class="text-white">  Connectez vous ici </a></p>
                 </div>
                 <div class="form w-75 mx-auto mb-3 p-5 rounded">
-                    <form>
+                    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
                         <div class="form-group">
                             <label for="basic-url" class="form-label text-white my-2">Nom</label>
                             <div class="input-group">
                                 <span class="input-group-text bg-transparent text-white border-end-0 p-2" id="basic-addon3">
                                     <i class="fa-regular fa-user fa-2x"></i>
                                 </span>
-                                <input type="text" class="form-control bg-transparent text-white border-start-0 " id="basic-url" placeholder="Nom" aria-describedby="basic-addon3">
+                                <input formControlName="name" type="text" class="form-control bg-transparent text-white border-start-0 " id="basic-url" placeholder="Nom" aria-describedby="basic-addon3">
                             </div>
-                            <span class="text-warning">* Ce champ est requis</span>
+                            <span class="text-warning" *ngIf="signupForm.controls['name'].dirty && signupForm.hasError('required','name')">* Ce champ est requis</span>
                         </div>
 
                         <div class="form-group">
@@ -25,9 +25,9 @@
                                 <span class="input-group-text bg-transparent text-white border-end-0 p-2" id="basic-addon3">
                                     <i class="fa-solid fa-user-large fa-2x"></i>
                                 </span>
-                                <input type="text" class="form-control bg-transparent text-white border-start-0" id="basic-url" placeholder="Prenom" aria-describedby="basic-addon3">
+                                <input formControlName="lastName" type="text" class="form-control bg-transparent text-white border-start-0" id="basic-url" placeholder="Prenom" aria-describedby="basic-addon3">
                             </div>
-                            <span class="text-warning">* Ce champ est requis</span>
+                            <span class="text-warning" *ngIf="signupForm.controls['lastName'].dirty && signupForm.hasError('required','lastName')">* Ce champ est requis</span>
                         </div>
 
                         <div class="form-group">
@@ -36,9 +36,9 @@
                                 <span class="input-group-text bg-transparent text-white border-end-0 p-2" id="basic-addon3">
                                     <i class="fa-regular fa-envelope fa-2x"></i>
                                 </span>
-                                <input type="email" class="form-control bg-transparent text-white border-start-0" id="basic-url" placeholder="email" aria-describedby="basic-addon3">
+                                <input formControlName="email" type="email" class="form-control bg-transparent text-white border-start-0" id="basic-url" placeholder="email" aria-describedby="basic-addon3">
                             </div>
-                            <span class="text-warning">* Ce champ est requis</span>
+                            <span class="text-warning" *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required','email')">* Ce champ est requis</span>
                         </div>
 
                         <div class="form-group">
@@ -47,12 +47,12 @@
                                 <span class="input-group-text bg-transparent text-white border-end-0 p-2" id="basic-addon3">
                                     <i class="fa-solid fa-lock fa-2x"></i>
                                 </span>
-                                <input type="password" class="form-control bg-transparent text-white border-start-0" id="basic-url" placeholder="Mot de passe" aria-describedby="basic-addon3">
+                                <input formControlName="password" type="password" class="form-control bg-transparent text-white border-start-0" id="basic-url" placeholder="Mot de passe" aria-describedby="basic-addon3">
                             </div>
-                            <span class="text-warning">* Ce champ est requis</span>
+                            <span class="text-warning" *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('minLength','password')">* Ce champ est requis</span>
                         </div>
 
-                        <button class="btn btn-primary mx-auto w-100 p-3">VALIDER</button>
+                        <button class="btn btn-primary mx-auto w-100 p-3 ">VALIDER</button>
 
                     </form>
                 </div>

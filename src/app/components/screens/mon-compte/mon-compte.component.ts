@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mon-compte',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonCompteComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
+
+  logOut(): void{
+    this.router.navigateByUrl('eshop');
+  }
+
 
 }

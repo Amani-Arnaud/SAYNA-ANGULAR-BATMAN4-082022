@@ -3,6 +3,7 @@ import * as fr from '@angular/common/locales/fr-CI';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxPaginationModule } from "ngx-pagination";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { LoginComponent } from './components/screens/login/login.component';
 import { ProductDetailComponent } from './components/screens/product-detail/product-detail.component';
 import { ButtonComponent } from './components/widgets/button/button.component';
 import { SignupComponent } from './components/screens/signup/signup.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +45,9 @@ import { SignupComponent } from './components/screens/signup/signup.component';
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {
