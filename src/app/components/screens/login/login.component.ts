@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void{
-    this.http.get<any>('http://localhost:3000/signUpUsers')
+    this.http.get<any>('https://sayna-batman-part4-api.herokuapp.com/signUpUsers')
     .subscribe((result) => {
       const user = result.find((ans: any) => {
         return (ans.email === this.loginForm.value.email && ans.password === this.loginForm.value.password);

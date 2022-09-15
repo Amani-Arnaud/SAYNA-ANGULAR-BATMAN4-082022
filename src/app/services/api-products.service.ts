@@ -12,7 +12,8 @@ export class ApiProductsService {
   nbreStarProduct!:number;
 
 
-  baseUrl:string = 'http://localhost:3000'; // URL de l'API
+  baseUrl:string = 'https://sayna-batman-part4-api.herokuapp.com'; // URL de l'API
+  // baseUrl:string = 'http://localhost:3000'; // URL de l'API
 
   urlProduct:string = this.baseUrl +'/products'; // URL pour les produits
   urlComment:string = this.baseUrl +'/comments'; // URL pour les commentaires

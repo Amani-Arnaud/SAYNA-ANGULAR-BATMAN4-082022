@@ -24,13 +24,13 @@ export class SignupComponent implements OnInit {
     this.signupForm = this.formBuilder.group({
       name: ['', Validators.required],
       lastName: ['', Validators.required],
-      email: ['', Validators.required, Validators.email],
-      password: ['', Validators.required, Validators.minLength(6)]
+      email: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 
   signUp(){
-    this.http.post<any>('http://localhost:3000/signUpUsers', this.signupForm.value)
+    this.http.post<any>('https://sayna-batman-part4-api.herokuapp.com/signUpUsers', this.signupForm.value)
     .subscribe((result) => {
       alert('Utilisateur enrégistré');
       this.signupForm.reset();
